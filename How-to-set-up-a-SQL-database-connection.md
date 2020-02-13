@@ -38,13 +38,13 @@ In case you want to use SQL authentication in FOCA, follow these steps:
 
 ![foca_regedit](https://user-images.githubusercontent.com/16854757/74442312-91a4f780-4e71-11ea-9901-690e2aa68264.PNG)
 
-1. Open a terminal and type
+2. Then, open a terminal and type
 
 `sqlcmd -S .\SQLEXPRESS`
 
 This will open a sqlcmd interface with your instance (remember, if you changed the instance name, modify the command accordingly).
 
-2. Then, create a login and a user for the Foca database
+3. Create a login and a user for the Foca database
 
 ```
 USE Foca
@@ -55,7 +55,7 @@ CREATE USER #USERNAME# FOR LOGIN #USERNAME#
 GO
 ```
 
-3. And finally, grant read/write permissions to the new user
+4. And finally, grant read/write permissions to the new user
 
 ```
 EXEC sp_addrolemember 'db_ddladmin', '#USERNAME#'
