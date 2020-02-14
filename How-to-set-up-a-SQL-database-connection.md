@@ -6,7 +6,7 @@ First, get the latest version of SQL Server Express from the Microsoft official 
 
 Once downloaded, select "Basic installation" and follow the installation wizard, sticking to the defaults (unless you know exactly what you are doing).
 
-![foca_bdinstall](https://user-images.githubusercontent.com/16854757/74440892-20fcdb80-4e6f-11ea-977c-9ed6b9818787.png)
+![install2](https://user-images.githubusercontent.com/16854757/74513899-e1d09800-4f0b-11ea-9df5-2096556f5ca5.png)
 
 Hopefully, you will end up with a fully working SQL Express instance.
 
