@@ -26,7 +26,7 @@ Then, choose your preferred authentication method. Here you have two options:
 * Use **Windows Authentication** (integrated authentication). This is the default option, which should work in most cases. It makes use of the Windows user account, so no additional credentials are required.
 * Use the **SQL Server Authentication**. To do so, you will need to create a login in your SQL server instance (see below), and then enter the credentials in the corresponding text boxes.
 
-![foca3](https://user-images.githubusercontent.com/16854757/74443169-09275680-4e73-11ea-9639-49538231e87e.PNG)
+![foca_integrated](https://user-images.githubusercontent.com/16854757/74517204-fe6fce80-4f11-11ea-85f5-9ef5219eda07.png)
 
 You can now test the connection by clicking the "Test" button. If everything is fine, you will see a "Success!" message. Finally, click on "Connect". FOCA should now work. 
 
