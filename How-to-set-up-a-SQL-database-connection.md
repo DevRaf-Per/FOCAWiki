@@ -32,37 +32,5 @@ You can now test the connection by clicking the "Test" button. If everything is 
 
 ### Creating a custom SQL login
 
-In case you want to use SQL authentication in FOCA, follow these steps:
-
-1. First, you must enable the 'mixed' authentication mode in your SQL instance. To do so, press `Windows+R` and type 'regedit'. You should see something like the panel in the figure. Then, navigate to the registry key of your SQL Server instance, something like `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQLServer`. Finally, in the right panel, set the 'LoginMode' to 2 (which means 'Mixed mode') and restart your SQL Server instance.
-
-![foca_regedit](https://user-images.githubusercontent.com/16854757/74442312-91a4f780-4e71-11ea-9901-690e2aa68264.PNG)
-
-2. Then, open a terminal and type
-
-`sqlcmd -S .\SQLEXPRESS`
-
-This will open a sqlcmd interface with your instance (remember, if you changed the instance name, modify the command accordingly).
-
-3. Create a login and a user for the Foca database
-
-```
-USE Foca
-GO
-CREATE LOGIN #USERNAME# WITH PASSWORD='#PASSWORD'
-GO
-CREATE USER #USERNAME# FOR LOGIN #USERNAME#
-GO
-```
-
-4. And finally, grant read/write permissions to the new user
-
-```
-EXEC sp_addrolemember 'db_ddladmin', '#USERNAME#'
-GO
-EXEC sp_addrolemember 'db_datareader', '#USERNAME#'
-GO 
-EXEC sp_addrolemember 'db_datawriter', '#USERNAME#'
-GO
-```
+In case you want to use SQL authentication in FOCA, follow the steps described in the official tutorials: [create a database user](https://docs.microsoft.com/en-gb/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-ver15) and [create a database role](https://docs.microsoft.com/en-gb/sql/relational-databases/system-stored-procedures/sp-addrolemember-transact-sql?view=sql-server-ver15).
 
