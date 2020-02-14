@@ -26,7 +26,7 @@ Then, choose your preferred authentication method. Here you have two options:
 
 ![foca_integrated](https://user-images.githubusercontent.com/16854757/74517204-fe6fce80-4f11-11ea-85f5-9ef5219eda07.png)
 
-You can now test the connection by clicking the "Test" button. If everything is fine, you will see a "Success!" message. Finally, click on "Connect". FOCA should now work. 
+Finally, click on "Connect". FOCA should now work. 
 
 ### Creating a custom SQL login
 
