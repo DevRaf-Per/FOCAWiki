@@ -16,9 +16,7 @@ When you run FOCA for the first time you will be prompted with a warning...
 
 ![foca1](https://user-images.githubusercontent.com/16854757/74443170-09bfed00-4e73-11ea-99c4-bf7f061e138e.PNG)
 
-... followed by a window to set up a database connection:
-
-![foca2](https://user-images.githubusercontent.com/16854757/74443168-09275680-4e73-11ea-9168-b3664b608fad.png)
+... followed by a window to set up a database connection.
 
 First, enter the server name in the textbox. Unless you have manually changed the instance name during the installation, it should be `.\SQLEXPRESS`.
 
